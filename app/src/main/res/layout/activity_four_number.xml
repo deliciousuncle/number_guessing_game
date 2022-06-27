@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fournumberactivity"
+    android:orientation="vertical"
+    tools:context=".four_number">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/num4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="462dp"
+        android:layout_height="319dp"
+        android:layout_weight="20"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/number_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_four_num"
+                android:text="0"
+                android:textStyle="bold"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/number_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_four_num"
+                android:text="1"
+                android:textStyle="bold"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/number_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_four_num"
+                android:text="2"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/number_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:onClick="btn_four_num"
+                android:text="3"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/number_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:onClick="btn_four_num"
+                android:text="4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/number_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:onClick="btn_four_num"
+                android:text="5"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/number_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_four_num"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:text="6"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/number_7"
+                android:layout_width="wrap_content"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_four_num"
+                android:text="7"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/number_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_four_num"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:text="8"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/number_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_four_num"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:text="9"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:onClick="btn_delete"
+                android:text="刪除"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:onClick="BTN_clear"
+                android:text="清空"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_back"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:text="退出"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:onClick="BTN_send"
+                android:text="送出"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_replay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:onClick="btn_replay"
+                android:text="重玩"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
